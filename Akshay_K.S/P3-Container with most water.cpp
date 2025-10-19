@@ -18,3 +18,22 @@ public:
         return area;
     }
 };
+int main() {
+    Solution sol;
+
+    // Input example: number of elements + array of heights
+    int n;
+    cout << "Enter number of lines: ";
+    cin >> n;
+
+    vector<int> height(n);
+    cout << "Enter heights: ";
+    for (int i = 0; i < n; i++) {
+        cin >> height[i];
+    }
+
+    int result = sol.maxArea(height);
+    cout << "Maximum area: " << result << endl;
+
+    return 0;
+}
