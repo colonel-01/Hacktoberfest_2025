@@ -3,7 +3,7 @@
 using namespace std;
 
 
-
+//LC 733
 /*basically u are given a 2d grid (like an image) and u start from a pixel sr, sc.You have to change its color and also all the connected pixels (up, down, left, right) which have the same original color to a new one.*/
 
 /*Approach-->first we take the color of the starting pixel and check if it’s already the same as the new color, 
