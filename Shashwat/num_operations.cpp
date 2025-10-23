@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 
+//LC 1319
 /*Question-->You’re given n computers and some connections between them. You can rewire any existing cable between two computers. The task is to find the minimum number of operations needed to connect all computers into one network. If not enough cables exist, return -1. */
 
 /*Approacch--> If the number of connections is less than n-1, it’s impossible to connect all computers. Otherwise, build an adjacency list and use DFS to count how many connected components exist. To connect all of them into a single network, we need (components - 1) operations, since each operation can connect two separate components.*/
